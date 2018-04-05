@@ -5,7 +5,7 @@
 {% block content %}
 <div class="container">
     <h1>{{ file.name }}</h1>
-    
+    <input type="hidden" value="{{ file.id }}">
     <div id="viewer">
         {% if ext in ['wav', 'mp3', 'ogg'] %}
         <audio src="{{ path }}" controls autoplay></audio>
